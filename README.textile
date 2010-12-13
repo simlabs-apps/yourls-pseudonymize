@@ -2,7 +2,9 @@ h1. YOURLS Pseudonymize Plugin
 
 This plugin "pseudonymizes" the IP addresses so that it is in line with the German privacy laws.
 
-This effectively means, that the last segment of an IP address is changed into a 0 ("zero").
+This effectively means, that the last 2 segments/bytes of an IP address is changed into a 0 ("zero"), thus removed.
+
+*NOTE*: This only works with IPv4 addresses!
 
 h2. Install
 
