@@ -6,9 +6,19 @@ This effectively means, that the last 2 segments/bytes of an IP address is chang
 
 *NOTE*: This only works with IPv4 addresses!
 
+h2. Download
+
+<a href="https://github.com/ubicoo/yourls-pseudonymize/zipball/v1.0">Download version 1.0</a>
+
 h2. Install
 
 Copy plugin.php to *YOURLS_HOME*/user/plugins/yourls-pseudonymize folder and activate via the admin menu.
+
+h2. Support
+
+<a href="http://blog.yourls.org/forums/topic/yourls-pseudonymize-plugin/">Discuss about this plugin</a> in the YOURLS forum.
+
+<a href="https://github.com/ubicoo/yourls-pseudonymize/issues/new">File an issue</a> right here on the GitHub project home.
 
 h2. MIT License
 
