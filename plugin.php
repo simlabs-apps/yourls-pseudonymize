@@ -2,8 +2,8 @@
 /*
 Plugin Name: Pseudonymize Plugin
 Plugin URI: http://github.com/ubicoo/yourls-pseudonymize
-Description: Pseudonymize IP addresses (remove last 2 segments/bytes).
-Version: 1.0
+Description: Pseudonymize IP addresses (remove last segment). Supports IPv4 and IPv6.
+Version: 1.1
 Author: Ubicoo
 Author URI: http://www.ubicoo.com
  */
@@ -18,7 +18,8 @@ function ubicoo_pseudonymize_IP( $ip ) {
 
         $pseudo_IP = implode(":", $segments);
 
-        # FIXME: What about: ::ffff:127.0.0.1? It's a valid v6 as well!
+        # FIXME: also handle IPv4 addresses at the end of IPv6, like ::ffff:127.0.0.1
+        
     } elseif(filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
         $segments = explode(".", $ip);
         $segments[3] = 0;

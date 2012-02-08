@@ -2,13 +2,15 @@ h1. YOURLS Pseudonymize Plugin
 
 This plugin "pseudonymizes" the IP addresses so that it is in line with the German privacy laws.
 
-This effectively means, that the last 2 segments/bytes of an IP address is changed into a 0 ("zero"), thus removed.
+This effectively means, that the last segment of an IP address is changed into a 0 ("zero"), thus removed.
 
-*NOTE*: This only works with IPv4 addresses!
+*IPv4 and IPv6 addresses are supported.*
+
+*NOTE*: Requires PHP >= 5.2.0 due to "filter_var":http://php.net/manual/en/function.filter-var.php usage.
 
 h2. Download
 
-<a href="https://github.com/ubicoo/yourls-pseudonymize/zipball/v1.0">Download version 1.0</a>
+Latest version: <a href="https://raw.github.com/ubicoo/yourls-pseudonymize/master/plugin.php">plugin.php</a>
 
 h2. Install
 
